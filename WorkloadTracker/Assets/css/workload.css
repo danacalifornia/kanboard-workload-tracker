@@ -1,0 +1,95 @@
+.workload-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.workload-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.workload-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.workload-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.workload-status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-optimal {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-high {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-overloaded {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.status-underutilized {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.workload-progress {
+    width: 100%;
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+.progress-optimal {
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+}
+
+.progress-high {
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+}
+
+.progress-overloaded {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.progress-underutilized {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.workload-details {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.workload-details strong {
+    color: #333;
+}
